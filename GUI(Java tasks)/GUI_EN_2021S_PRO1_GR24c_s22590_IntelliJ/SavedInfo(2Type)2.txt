@@ -1,0 +1,186 @@
+----------------------------------------------------HOUSING ESTATE 1 ----------------------------------------------------
+Apartment 23D volume: 400.0
+This apartments doesn't have any tenant
+Nobody is living in this apartment
+Now this apartment is not renting
+Parking place volume for 23D apartment is: 0.0 m3 / 61.0 m3(max)
+No items and vehicles in this parking place
+
+Apartment 209B volume: 500.0
+This apartments doesn't have any tenant
+Nobody is living in this apartment
+Now this apartment is not renting
+Parking place volume for 209B apartment is: 0.0 m3 / 97.0 m3(max)
+No items and vehicles in this parking place
+
+Apartment 512A volume: 504.0
+This apartments doesn't have any tenant
+Nobody is living in this apartment
+Now this apartment is not renting
+Parking place volume for 512A apartment is: 0.0 m3 / 150.0 m3(max)
+No items and vehicles in this parking place
+
+Apartment 111C volume: 3960.0
+Tenant for 111C is Alex wqe
+People who are living in 111C:
+Alex wqe with pesel number: 123 and address: 123
+Rent started in: Wed Jun 09 21:54:33 CEST 2021
+Rent ends in: Fri Jul 09 21:54:33 CEST 2021
+Parking place volume for 111C apartment is: 0.0 m3 / 250.0 m3(max)
+Vehicles in this parking place: 
+Items in this parking place: 
+Tenant letters for Alex wqe: 
+1. You started renting apartment 111C(Today's date is Wed Jun 09 21:54:33 CEST 2021)
+
+----------------------------------------------------HOUSING ESTATE 2 ----------------------------------------------------
+Apartment 13A volume: 90.0
+This apartments doesn't have any tenant
+Nobody is living in this apartment
+Now this apartment is not renting
+Parking place volume for 13A apartment is: 0.0 m3 / 126.0 m3(max)
+No items and vehicles in this parking place
+
+Apartment 221E volume: 180.0
+This apartments doesn't have any tenant
+Nobody is living in this apartment
+Now this apartment is not renting
+Parking place volume for 221E apartment is: 0.0 m3 / 144.0 m3(max)
+No items and vehicles in this parking place
+
+Apartment 4B volume: 320.0
+This apartments doesn't have any tenant
+Nobody is living in this apartment
+Now this apartment is not renting
+Parking place volume for 4B apartment is: 0.0 m3 / 300.0 m3(max)
+No items and vehicles in this parking place
+
+Apartment 993A volume: 2073.5
+This apartments doesn't have any tenant
+Nobody is living in this apartment
+Now this apartment is not renting
+Parking place volume for 993A apartment is: 0.0 m3 / 93.0 m3(max)
+No items and vehicles in this parking place
+
+----------------------------------------------------ALL TENANT LETTERS INFO----------------------------------------------------
+Tenant letters for Alex Marquizy: 
+1. You started renting apartment 209B(Today's date is Fri Apr 23 21:54:33 CEST 2021)
+2. You started renting a parking place in apartment 209B(Today's date is Fri Apr 23 21:54:33 CEST 2021)
+3. You didn't pay in time for 209B apartment.(Today's date is Tue May 25 21:54:33 CEST 2021)
+4. You didn't pay in time for parking place for209B apartment.(Today's date is Tue May 25 21:54:33 CEST 2021)
+5. You didn't pay in time for 209B apartment.(Today's date is Thu May 27 21:54:33 CEST 2021)
+6. You didn't pay in time for parking place for209B apartment.(Today's date is Thu May 27 21:54:33 CEST 2021)
+7. You were kicked from 209B apartment.(Today's date is Sat May 29 21:54:33 CEST 2021)
+
+Tenant Vasya Bonishuk doesn't have any tenant letters
+
+Tenant Maria Ivanova doesn't have any tenant letters
+
+Tenant letters for Olha Shuliak: 
+1. You started renting apartment 512A(Today's date is Fri Apr 23 21:54:33 CEST 2021)
+2. You started renting a parking place in apartment 512A(Today's date is Fri Apr 23 21:54:33 CEST 2021)
+3. You didn't pay in time for 512A apartment.(Today's date is Tue May 25 21:54:33 CEST 2021)
+4. You didn't pay in time for parking place for512A apartment.(Today's date is Tue May 25 21:54:33 CEST 2021)
+5. You didn't pay in time for 512A apartment.(Today's date is Thu May 27 21:54:33 CEST 2021)
+6. You didn't pay in time for parking place for512A apartment.(Today's date is Thu May 27 21:54:33 CEST 2021)
+7. You were kicked from 512A apartment.(Today's date is Sat May 29 21:54:33 CEST 2021)
+
+Tenant letters for Mark Klim: 
+1. You started renting apartment 23D(Today's date is Fri Apr 23 21:54:33 CEST 2021)
+2. You started renting a parking place in apartment 23D(Today's date is Fri Apr 23 21:54:33 CEST 2021)
+3. You didn't pay in time for 23D apartment.(Today's date is Tue May 25 21:54:33 CEST 2021)
+4. You didn't pay in time for parking place for23D apartment.(Today's date is Tue May 25 21:54:33 CEST 2021)
+5. You didn't pay in time for 23D apartment.(Today's date is Thu May 27 21:54:33 CEST 2021)
+6. You didn't pay in time for parking place for23D apartment.(Today's date is Thu May 27 21:54:33 CEST 2021)
+7. You were kicked from 23D apartment.(Today's date is Sat May 29 21:54:33 CEST 2021)
+
+Tenant Vasya Klochkov doesn't have any tenant letters
+
+Tenant letters for Kolia Sidorov: 
+1. You started renting apartment 111C(Today's date is Fri Apr 23 21:54:33 CEST 2021)
+2. You started renting a parking place in apartment 111C(Today's date is Fri Apr 23 21:54:33 CEST 2021)
+3. You didn't pay in time for 111C apartment.(Today's date is Tue May 25 21:54:33 CEST 2021)
+4. You didn't pay in time for parking place for111C apartment.(Today's date is Tue May 25 21:54:33 CEST 2021)
+5. You didn't pay in time for 111C apartment.(Today's date is Thu May 27 21:54:33 CEST 2021)
+6. You didn't pay in time for parking place for111C apartment.(Today's date is Thu May 27 21:54:33 CEST 2021)
+7. You were kicked from 111C apartment.(Today's date is Sat May 29 21:54:33 CEST 2021)
+
+Tenant Petya Petrov doesn't have any tenant letters
+
+Tenant Masha Podol doesn't have any tenant letters
+
+Tenant Sasha Herov doesn't have any tenant letters
+
+Tenant letters for Pushkin Marquizy: 
+1. You started renting apartment 993A(Today's date is Fri Apr 23 21:54:33 CEST 2021)
+2. You started renting a parking place in apartment 993A(Today's date is Fri Apr 23 21:54:33 CEST 2021)
+3. You didn't pay in time for 993A apartment.(Today's date is Tue May 25 21:54:33 CEST 2021)
+4. You didn't pay in time for parking place for993A apartment.(Today's date is Tue May 25 21:54:33 CEST 2021)
+5. You didn't pay in time for 993A apartment.(Today's date is Thu May 27 21:54:33 CEST 2021)
+6. You didn't pay in time for parking place for993A apartment.(Today's date is Thu May 27 21:54:33 CEST 2021)
+7. You were kicked from 993A apartment.(Today's date is Sat May 29 21:54:33 CEST 2021)
+
+Tenant Sopilka Bonishuk doesn't have any tenant letters
+
+Tenant letters for Grioriy Grigoryan: 
+1. You started renting apartment 221E(Today's date is Fri Apr 23 21:54:33 CEST 2021)
+2. You started renting a parking place in apartment 221E(Today's date is Fri Apr 23 21:54:33 CEST 2021)
+3. You didn't pay in time for 221E apartment.(Today's date is Tue May 25 21:54:33 CEST 2021)
+4. You didn't pay in time for parking place for221E apartment.(Today's date is Tue May 25 21:54:33 CEST 2021)
+5. You didn't pay in time for 221E apartment.(Today's date is Thu May 27 21:54:33 CEST 2021)
+6. You didn't pay in time for parking place for221E apartment.(Today's date is Thu May 27 21:54:33 CEST 2021)
+7. You were kicked from 221E apartment.(Today's date is Sat May 29 21:54:33 CEST 2021)
+
+Tenant Eldjay Boshki doesn't have any tenant letters
+
+Tenant Vasiliy Vodniy doesn't have any tenant letters
+
+Tenant letters for Jeka Tarakan: 
+1. You started renting apartment 13A(Today's date is Fri Apr 23 21:54:33 CEST 2021)
+2. You started renting a parking place in apartment 13A(Today's date is Fri Apr 23 21:54:33 CEST 2021)
+3. You didn't pay in time for 13A apartment.(Today's date is Tue May 25 21:54:33 CEST 2021)
+4. You didn't pay in time for parking place for13A apartment.(Today's date is Tue May 25 21:54:33 CEST 2021)
+5. You didn't pay in time for 13A apartment.(Today's date is Thu May 27 21:54:33 CEST 2021)
+6. You didn't pay in time for parking place for13A apartment.(Today's date is Thu May 27 21:54:33 CEST 2021)
+7. You were kicked from 13A apartment.(Today's date is Sat May 29 21:54:33 CEST 2021)
+
+Tenant letters for Natasha Gvozd: 
+1. You started renting apartment 4B(Today's date is Fri Apr 23 21:54:33 CEST 2021)
+2. You started renting a parking place in apartment 4B(Today's date is Fri Apr 23 21:54:33 CEST 2021)
+3. You didn't pay in time for 4B apartment.(Today's date is Tue May 25 21:54:33 CEST 2021)
+4. You didn't pay in time for parking place for4B apartment.(Today's date is Tue May 25 21:54:33 CEST 2021)
+5. You didn't pay in time for 4B apartment.(Today's date is Thu May 27 21:54:33 CEST 2021)
+6. You didn't pay in time for parking place for4B apartment.(Today's date is Thu May 27 21:54:33 CEST 2021)
+7. You were kicked from 4B apartment.(Today's date is Sat May 29 21:54:33 CEST 2021)
+
+Tenant Genadiy Smirnov doesn't have any tenant letters
+
+Tenant Emil Tuhliy doesn't have any tenant letters
+
+Tenant Radik Uvilichenko doesn't have any tenant letters
+
+Tenant alex podoli doesn't have any tenant letters
+
+Tenant letters for Alex wqe: 
+1. You started renting apartment 111C(Today's date is Wed Jun 09 21:54:33 CEST 2021)
+
+----------------------------------------------------ADDITIONAL INFO----------------------------------------------------
+Number of housing estates: 2
+Number of all apartments in housing estates: 8
+Number of all people who lives in housing estates: 1
+Number of all items stored in housing estates: 0
+Number of all vehicles stored in housing estates: 0
+
+Number of all apartments in housing estate 1: 4
+Number of free apartments in housing estate 1: 3
+Number of occupied apartments in housing estate 1: 1
+Number of people who lives in housing estate 1: 1
+Number of items stored in housing estate 1: 0
+Number of all vehicles stored in housing estates 1: 0
+
+Number of all apartments in housing estate 2: 4
+Number of free apartments in housing estate 2: 4
+Number of occupied apartments in housing estate 2: 0
+Number of people who lives in housing estate 2: 0
+Number of items stored in housing estate 2: 0
+Number of all vehicles stored in housing estates 2: 0
+

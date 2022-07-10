@@ -1,0 +1,201 @@
+----------------------------------------------------HOUSING ESTATE 0 ----------------------------------------------------
+Apartment 23D volume: 400.0
+This apartments doesn't have any tenant
+Nobody is living in this apartment
+Now this apartment is not renting
+Parking place volume for 23D apartment is: 0.0 m3 / 61.0 m3(max)
+No items and vehicles in this parking place
+
+Apartment 209B volume: 500.0
+Tenant for 209B is Alex Marquizy
+People who are living in 209B:
+Alex Marquizy with pesel number: 02477849302 and address: Saint Volodymr street 34A
+Vasya Bonishuk with pesel number: 01373859302 and address: King Piotr street 22B
+Maria Ivanova with pesel number: 11384953761 and address: Volohotskaya street 9A
+Rent started in: Tue Apr 27 11:54:16 CEST 2021
+Rent ends in: Thu May 27 11:54:16 CEST 2021
+Parking place volume for 209B apartment is: 53.0 m3 / 97.0 m3(max)
+Items and vehicles in this parking place: 
+1. Lamborgini with volume: 15.0
+2. Sonya with volume: 12.0
+3. OffnikCar with volume: 11.0
+4. Jan with volume: 11.0
+5. Boshka with volume: 2.0
+6. Svitr with volume: 1.0
+7. Petro with volume: 0.01
+Tenant letters for Alex Marquizy: 
+1. You started renting apartment 209B(Today's date is Tue Apr 27 11:54:16 CEST 2021)
+2. You started renting a parking place in apartment 209B(Today's date is Tue Apr 27 11:54:16 CEST 2021)
+
+Apartment 512A volume: 504.0
+Tenant for 512A is Olha Shuliak
+People who are living in 512A:
+Olha Shuliak with pesel number: 02341748393 and address: Pravda street 77D
+Rent started in: Tue Apr 27 11:54:16 CEST 2021
+Rent ends in: Thu May 27 11:54:16 CEST 2021
+Parking place volume for 512A apartment is: 50.0 m3 / 150.0 m3(max)
+Items and vehicles in this parking place: 
+1. ArsenMobil with volume: 22.1
+2. Je Re Mo with volume: 13.1
+3. BaduYan with volume: 12.1
+4. Bochka with volume: 0.5
+5. Sinhu Yni with volume: 0.993
+6. Mamus with volume: 1.0
+Tenant letters for Olha Shuliak: 
+1. You started renting apartment 512A(Today's date is Tue Apr 27 11:54:16 CEST 2021)
+2. You started renting a parking place in apartment 512A(Today's date is Tue Apr 27 11:54:16 CEST 2021)
+
+Apartment 111C volume: 3960.0
+This apartments doesn't have any tenant
+Nobody is living in this apartment
+Now this apartment is not renting
+Parking place volume for 111C apartment is: 0.0 m3 / 250.0 m3(max)
+No items and vehicles in this parking place
+
+----------------------------------------------------HOUSING ESTATE 1 ----------------------------------------------------
+Apartment 13A volume: 90.0
+Tenant for 13A is Jeka Tarakan
+People who are living in 13A:
+Jeka Tarakan with pesel number: 09347588911 and address: Nebesov street 12A
+Rent started in: Tue Apr 27 11:54:16 CEST 2021
+Rent ends in: Thu May 27 11:54:16 CEST 2021
+Parking place volume for 13A apartment is: 61.0 m3 / 126.0 m3(max)
+Items and vehicles in this parking place: 
+1. Lamborgini with volume: 15.0
+2. Lamborgini with volume: 14.0
+3. Lamborgini with volume: 13.0
+4. Lamborgini with volume: 12.0
+5. Dimooon with volume: 5.0
+6. Sopilka with volume: 1.0
+7. Pisof Blad with volume: 1.0
+Tenant letters for Jeka Tarakan: 
+1. You started renting apartment 13A(Today's date is Tue Apr 27 11:54:16 CEST 2021)
+2. You started renting a parking place in apartment 13A(Today's date is Tue Apr 27 11:54:16 CEST 2021)
+
+Apartment 221E volume: 180.0
+Tenant for 221E is Grioriy Grigoryan
+People who are living in 221E:
+Grioriy Grigoryan with pesel number: 11384953761 and address: Volohotskaya street 9A
+Eldjay Boshki with pesel number: 02341748393 and address: Pravda street 77D
+Vasiliy Vodniy with pesel number: 21348586679 and address: Alex Bilinski street 111A
+Rent started in: Tue Apr 27 11:54:16 CEST 2021
+Rent ends in: Thu May 27 11:54:16 CEST 2021
+Parking place volume for 221E apartment is: 39.0 m3 / 144.0 m3(max)
+Items and vehicles in this parking place: 
+1. Danya with volume: 13.0
+2. Vasya with volume: 12.0
+3. Planeta with volume: 11.0
+4. Papuas with volume: 1.0
+5. Magnum with volume: 1.0
+6. Dimond with volume: 1.0
+Tenant letters for Grioriy Grigoryan: 
+1. You started renting apartment 221E(Today's date is Tue Apr 27 11:54:16 CEST 2021)
+2. You started renting a parking place in apartment 221E(Today's date is Tue Apr 27 11:54:16 CEST 2021)
+
+Apartment 4B volume: 320.0
+Tenant for 4B is Natasha Gvozd
+People who are living in 4B:
+Natasha Gvozd with pesel number: 02324457892 and address: Klochko street 226A
+Genadiy Smirnov with pesel number: 00131488953 and address: Alex Bilinski street 88C
+Emil Tuhliy with pesel number: 03647582932 and address: Ulica zalupnosti 77A
+Radik Uvilichenko with pesel number: 02838485965 and address: Happy street 443B
+Rent started in: Tue Apr 27 11:54:16 CEST 2021
+Rent ends in: Thu May 27 11:54:16 CEST 2021
+Parking place volume for 4B apartment is: 37.0 m3 / 300.0 m3(max)
+Items and vehicles in this parking place: 
+1. MarquizyBro with volume: 14.0
+2. Krim with volume: 14.0
+3. Fridge with volume: 5.0
+4. Lampa with volume: 2.0
+5. Computer with volume: 0.01
+6. Krichka with volume: 0.5
+7. Frazer with volume: 1.0
+Tenant letters for Natasha Gvozd: 
+1. You started renting apartment 4B(Today's date is Tue Apr 27 11:54:16 CEST 2021)
+2. You started renting a parking place in apartment 4B(Today's date is Tue Apr 27 11:54:16 CEST 2021)
+
+Apartment 993A volume: 2073.5
+This apartments doesn't have any tenant
+Nobody is living in this apartment
+Now this apartment is not renting
+Parking place volume for 993A apartment is: 0.0 m3 / 93.0 m3(max)
+No items and vehicles in this parking place
+
+----------------------------------------------------ALL TENANT LETTERS INFO----------------------------------------------------
+Tenant letters for Alex Marquizy: 
+1. You started renting apartment 209B(Today's date is Tue Apr 27 11:54:16 CEST 2021)
+2. You started renting a parking place in apartment 209B(Today's date is Tue Apr 27 11:54:16 CEST 2021)
+
+Tenant Vasya Bonishuk doesn't have any tenant letters
+
+Tenant Maria Ivanova doesn't have any tenant letters
+
+Tenant letters for Olha Shuliak: 
+1. You started renting apartment 512A(Today's date is Tue Apr 27 11:54:16 CEST 2021)
+2. You started renting a parking place in apartment 512A(Today's date is Tue Apr 27 11:54:16 CEST 2021)
+
+Tenant letters for Mark Klim: 
+1. You started renting apartment 23D(Today's date is Tue Apr 27 11:54:16 CEST 2021)
+2. You started renting a parking place in apartment 23D(Today's date is Tue Apr 27 11:54:16 CEST 2021)
+
+Tenant Vasya Klochkov doesn't have any tenant letters
+
+Tenant letters for Kolia Sidorov: 
+1. You started renting apartment 111C(Today's date is Tue Apr 27 11:54:16 CEST 2021)
+2. You started renting a parking place in apartment 111C(Today's date is Tue Apr 27 11:54:16 CEST 2021)
+
+Tenant Petya Petrov doesn't have any tenant letters
+
+Tenant Masha Podol doesn't have any tenant letters
+
+Tenant Sasha Herov doesn't have any tenant letters
+
+Tenant letters for Pushkin Marquizy: 
+1. You started renting apartment 993A(Today's date is Tue Apr 27 11:54:16 CEST 2021)
+2. You started renting a parking place in apartment 993A(Today's date is Tue Apr 27 11:54:16 CEST 2021)
+
+Tenant Sopilka Bonishuk doesn't have any tenant letters
+
+Tenant letters for Grioriy Grigoryan: 
+1. You started renting apartment 221E(Today's date is Tue Apr 27 11:54:16 CEST 2021)
+2. You started renting a parking place in apartment 221E(Today's date is Tue Apr 27 11:54:16 CEST 2021)
+
+Tenant Eldjay Boshki doesn't have any tenant letters
+
+Tenant Vasiliy Vodniy doesn't have any tenant letters
+
+Tenant letters for Jeka Tarakan: 
+1. You started renting apartment 13A(Today's date is Tue Apr 27 11:54:16 CEST 2021)
+2. You started renting a parking place in apartment 13A(Today's date is Tue Apr 27 11:54:16 CEST 2021)
+
+Tenant letters for Natasha Gvozd: 
+1. You started renting apartment 4B(Today's date is Tue Apr 27 11:54:16 CEST 2021)
+2. You started renting a parking place in apartment 4B(Today's date is Tue Apr 27 11:54:16 CEST 2021)
+
+Tenant Genadiy Smirnov doesn't have any tenant letters
+
+Tenant Emil Tuhliy doesn't have any tenant letters
+
+Tenant Radik Uvilichenko doesn't have any tenant letters
+
+----------------------------------------------------ADDITIONAL INFO----------------------------------------------------
+Number of housing estates: 2
+Number of all apartments in housing estates: 8
+Number of all people who lives in housing estates: 12
+Number of all items stored in housing estates: 17
+Number of all vehicles stored in housing estates: 16
+
+Number of all apartments in housing estate 1: 4
+Number of free apartments in housing estate 1: 2
+Number of occupied apartments in housing estate 1: 2
+Number of people who lives in housing estate 1: 4
+Number of items stored in housing estate 1: 6
+Number of all vehicles stored in housing estates 1: 7
+
+Number of all apartments in housing estate 2: 4
+Number of free apartments in housing estate 2: 1
+Number of occupied apartments in housing estate 2: 3
+Number of people who lives in housing estate 2: 8
+Number of items stored in housing estate 2: 11
+Number of all vehicles stored in housing estates 2: 9
+
