@@ -1,0 +1,3 @@
+﻿  Lesson10Task2.cpp
+D:\PJATK\PJC\Lesson10\task2\Lesson10Task2\Lesson10Task2\Lesson10Task2.cpp(29,14): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+  Lesson10Task2.vcxproj -> D:\PJATK\PJC\Lesson10\task2\Lesson10Task2\Debug\Lesson10Task2.exe

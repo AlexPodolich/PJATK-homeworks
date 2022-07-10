@@ -1,0 +1,9 @@
+﻿  Lesson6Task3.cpp
+D:\PJATK\PJC\Lesson 6\task 3\Lesson6Task3\Lesson6Task3\Lesson6Task3.cpp(24,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\PJATK\PJC\Lesson 6\task 3\Lesson6Task3\Lesson6Task3\Lesson6Task3.cpp(54): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::vector<double,std::allocator<double>> transfilt<double,main::<lambda_cfad4d3e199d8ee8467baed01a56e18d>,main::<lambda_225e90615ae1ca76ff2e1894a4e0b98d>>(std::vector<double,std::allocator<double>> &,FunType1,FunType2)"
+          with
+          [
+              FunType1=main::<lambda_cfad4d3e199d8ee8467baed01a56e18d>,
+              FunType2=main::<lambda_225e90615ae1ca76ff2e1894a4e0b98d>
+          ]
+  Lesson6Task3.vcxproj -> D:\PJATK\PJC\Lesson 6\task 3\Lesson6Task3\Debug\Lesson6Task3.exe

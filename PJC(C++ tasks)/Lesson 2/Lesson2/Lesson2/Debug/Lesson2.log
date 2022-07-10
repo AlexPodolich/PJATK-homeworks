@@ -1,0 +1,13 @@
+﻿  Lesson2.cpp
+D:\PJATK\1 Year\PJC\Lesson 2\Lesson2\Lesson2\Lesson2.cpp(62,13): error C2086: int userNum: переопределение
+D:\PJATK\1 Year\PJC\Lesson 2\Lesson2\Lesson2\Lesson2.cpp(29): message : см. объявление "userNum"
+D:\PJATK\1 Year\PJC\Lesson 2\Lesson2\Lesson2\Lesson2.cpp(106,13): error C2086: int userNum: переопределение
+D:\PJATK\1 Year\PJC\Lesson 2\Lesson2\Lesson2\Lesson2.cpp(29): message : см. объявление "userNum"
+D:\PJATK\1 Year\PJC\Lesson 2\Lesson2\Lesson2\Lesson2.cpp(107,13): error C2374: maxCounter: переопределение; множественная инициализация
+D:\PJATK\1 Year\PJC\Lesson 2\Lesson2\Lesson2\Lesson2.cpp(65): message : см. объявление "maxCounter"
+D:\PJATK\1 Year\PJC\Lesson 2\Lesson2\Lesson2\Lesson2.cpp(108,13): error C2086: int maxVariable: переопределение
+D:\PJATK\1 Year\PJC\Lesson 2\Lesson2\Lesson2\Lesson2.cpp(66): message : см. объявление "maxVariable"
+D:\PJATK\1 Year\PJC\Lesson 2\Lesson2\Lesson2\Lesson2.cpp(111,14): error C2374: inputNotZero: переопределение; множественная инициализация
+D:\PJATK\1 Year\PJC\Lesson 2\Lesson2\Lesson2\Lesson2.cpp(67): message : см. объявление "inputNotZero"
+D:\PJATK\1 Year\PJC\Lesson 2\Lesson2\Lesson2\Lesson2.cpp(155,52): error C2088: <<: недопустимо для class
+D:\PJATK\1 Year\PJC\Lesson 2\Lesson2\Lesson2\Lesson2.cpp(247,96): warning C4244: *=: преобразование "double" в "int", возможна потеря данных

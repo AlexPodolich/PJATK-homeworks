@@ -1,0 +1,4 @@
+﻿  Lesson7task2.cpp
+D:\PJATK\PJC\Lesson 7\task 2\Lesson7task2\Lesson7task2\Lesson7task2.cpp(38,23): warning C4018: <: несоответствие типов со знаком и без знака
+D:\PJATK\PJC\Lesson 7\task 2\Lesson7task2\Lesson7task2\Lesson7task2.cpp(52): message : выполняется компиляция ссылки на экземпляр шаблон функции "void printVec<double>(const std::vector<double,std::allocator<double>> &)"
+  Lesson7task2.vcxproj -> D:\PJATK\PJC\Lesson 7\task 2\Lesson7task2\Debug\Lesson7task2.exe

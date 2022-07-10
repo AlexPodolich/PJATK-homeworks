@@ -1,0 +1,6 @@
+﻿  Lesson13Task1.cpp
+  Person.cpp
+D:\PJATK\PJC\Lesson13\Lesson13Task1\Lesson13Task1\Person.cpp(3,38): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\PJATK\PJC\Lesson13\Lesson13Task1\Lesson13Task1\Person.cpp(7,5): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\PJATK\PJC\Lesson13\Lesson13Task1\Lesson13Task1\Person.cpp(15,5): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Создание кода...
