@@ -1,0 +1,67 @@
+<%- include('../../fragments/header.ejs') %>
+    <main>
+        <h2>
+            <%= __('room.list.title') %>
+        </h2>
+        <table class="table-list table-rooms">
+            <thead>
+                <tr>
+                    <th>
+                        <%= __('room.fields.roomNum') %>
+                    </th>
+                    <th>
+                        <%= __('room.fields.price') %>
+                    </th>
+                    <% if(admin) { %>
+                    <th>
+                        <%= __('list.actions.title') %>
+                    </th>
+                    <% } %>
+                </tr>
+            </thead>
+            <tbody>
+                <% for (let room of rooms){ %>
+                    <tr>
+                        <td>
+                            <%= room.number%>
+                        </td>
+                        <td>
+                            <%= room.price%>
+                        </td>
+                        <% if(admin) { %>
+                        <td>
+                            <ul class="list-actions">
+                                
+                                    <li>
+                                        <a href="/rooms/details/<%=room._id%>" class="list-actions-button-details">
+                                            <%= __('list.actions.details') %>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/rooms/edit/<%=room._id%>" class="list-actions-button-edit">
+                                            <%= __('list.actions.edit') %>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/rooms/delete/<%=room._id%>" class="list-actions-button-delete">
+                                            <%= __('list.actions.delete') %>
+                                        </a>
+                                    </li>
+                                
+                            </ul>
+                        </td>
+                        <% } %>
+                    </tr>
+                    <% } %>
+            </tbody>
+        </table>
+        <% if(admin) { %>
+            <p>
+                <a href="rooms/add" class="button-add">
+                    <%= __('room.list.addNew') %>
+                </a>
+            </p>
+        <% } %>
+
+    </main>
+    <%- include('../../fragments/footer.ejs') %>

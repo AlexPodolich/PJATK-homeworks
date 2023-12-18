@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="application/javascript" src="/js/validationCommon.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8">
+    <title>
+        <%= __('main-page.title') %>
+    </title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div style="width: 100%; display: grid; grid-template-columns: repeat(2, 1fr);">
+            <h1>
+                <%= __('main-page.title') %>
+            </h1>
+            <img src="https://bi.im-g.pl/im/2c/36/18/z25389612AMP,Nowy-akademik-Student-Depot.jpg" alt="Dormitory LOGO" width="250" height="150" style="justify-self: end;">
+            <% if(!loggedUser) { %>
+                <div id="login" style="text-align: center; grid-column: 1 / 4;">
+                    <h3>
+                        <%= __('log-in.text') %>
+                    </h3>
+                    <form method="post" action="/login" novalidate>
+                        <label style="font-size: larger;" for="loginPhone"><%= __('log-in.phone') %></label>
+                        <input type="phone_number" id="loginPhone" name="phone_number">
+
+                        <label style="font-size: larger;" for="loginPassword"><%= __('log-in.password') %></label>
+                        <input type="password" id="loginPassword" name="password">
+
+                        <input type="submit" class="button-sign-in" value="<%= __('log-in.sign-in') %>">
+                        <span id="loginErrors"><%= loginError ? loginError : ''%></span>
+                    </form>
+                </div>
+                <% } else { %>
+                    <span style="text-align: center; grid-column: 1 / 4; font-size: larger;"><%= __('log-in.log-in-text') %>  <%=" " + loggedUser.first_name + " " + loggedUser.last_name%></span>
+                    <a href="/logout" style="text-align: center; grid-column: 1 / 4;" class="button-sign-out">
+                        <%= __('log-in.sign-out') %>
+                    </a>
+                    <% } %>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="/" class="<%= navLocation == 'main' ? 'active' : ''%>">
+                    <%= __('nav.main-page') %>
+                </a>
+            </li>
+            <% if(loggedUser || admin) { %>
+            <li>
+                <a href="/rooms" class="<%= navLocation == 'room' ? 'active' : ''%>">
+                    <%= __('nav.rooms') %>
+                </a>
+            </li>
+            <li>
+                <a href="/reservedRooms" class="<%= navLocation == 'reservedRoom' ? 'active' : ''%>">
+                    <%= __('nav.res-rooms') %>
+                </a>
+            </li>
+            <li>
+                <a href="/residents" class="<%= navLocation == 'resident' ? 'active' : ''%>">
+                    <%= __('nav.residents') %>
+                </a>
+            </li>
+            <% } %>
+        </ul>
+        <ul class="selectLanguage">
+            <li><a href="/changeLang/pl" class="<%= lang == 'pl' ? 'active' : ''%>">PL</a></li>
+            <li><a href="/changeLang/en" class="<%= lang == 'en' ? 'active' : ''%>">EN</a></li>
+        </ul>
+    </nav>

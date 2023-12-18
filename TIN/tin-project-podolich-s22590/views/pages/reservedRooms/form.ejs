@@ -1,0 +1,133 @@
+<%- include('../../fragments/header.ejs') %>
+    <main>
+        <script type="application/javascript" src="/js/validationReservedRoomForm.js"></script>
+        <h2>
+            <%= pageTitle%>
+        </h2>
+        <div style="display: none">
+            <span id="errorMessage-required"><%= __('validationMessage.fieldRequired') %></span>
+            <span id="errorMessage-validDate"><%= __('validationMessage.validDate') %></span>
+            <span id="errorMessage-pastDate"><%= __('validationMessage.pastDate') %></span>
+            <span id="errorMessage-formErrors"><%= __('validationMessage.formErrors') %></span>
+            <span id="errorMessage-endStartDateError"><%= __('validationMessage.endStartDateError') %></span>
+        </div>
+        <form class="form" method="post" action="<%=formAction%>" novalidate onsubmit="return validateForm();">
+            <input type="hidden" name="_id" value="<%= reservedRoom._id%>">
+            <label for="room"><%= __('resRoom.form.details.room') %> <span class="symbol-required">*</span></label>
+            <select id="room_id" name="room_id" class="<%= validationErrors.find(e => e.path.includes('room_id')) ? 'error-input' : ''%>" required <%=( formMode=='showDetails' ) ? 'disabled' : ''%> >
+                <option value = "" selected><%= __('resRoom.form.details.selectRoom') %></option>
+                <% for  (let i = 0; i < allRooms.length; i++) { let room = allRooms[i]; %>
+                    <option value = "<%= room._id %>" label="<%= room.number + '    (' + room.price + ' zl)' %>"
+                        <% if (formMode == 'createNew') { %>
+                        <%= (room._id.toString() == reservedRoom.room_id) ? 'selected' : ''%>>
+                        <% } %>
+                        <% if (formMode == 'showEdit') { %>
+                        <%= (reservedRoom._id && room._id.toString() == reservedRoom.room._id.toString()) ? 'selected' : ''%>>
+                        <% } %>
+                        <% if (formMode == 'edit') { %>
+                        <%= (room._id.toString() == reservedRoom.room_id) ? 'selected' : ''%>>
+                        <% } %>
+                        <% if (formMode == 'showDetails') { %>
+                        <%= (reservedRoom._id && room._id.toString() == reservedRoom.room._id.toString()) ? 'selected' : ''%>>
+                        <% } %>
+                    </option>
+                <% } %>
+            </select>
+            <span id="errorRoom" class="errors-text">
+                <% if (validationErrors.find(e => e.path.includes('room_id'))) { %>
+                    <%= __(validationErrors.find(e => e.path.includes('room_id')).message) %>
+                <%}%>
+            </span>
+
+            <label for="resident"><%= __('resRoom.form.details.resident') %> <span class="symbol-required">*</span></label>
+            <select id="res_id" name="res_id" class="<%= validationErrors.find(e => e.path.includes('res_id')) ? 'error-input' : ''%>" required <%=( formMode=='showDetails' ) ? 'disabled' : ''%> >
+                <option value = "" selected><%= __('resRoom.form.details.selectResident') %></option>
+                <% for  (let i = 0; i < allRes.length; i++) { let res = allRes[i]; %>
+                    <% if(admin) { %>
+                        <% if(res.phone_number != loggedUser.phone_number && res.last_name != loggedUser.last_name && res.first_name != loggedUser.first_name){%>
+                            <option value = "<%= res._id %>" label="<%= res.first_name + ' ' + res.last_name %>"
+                                <% if (formMode == 'createNew') { %>
+                                <%= (res._id.toString() == reservedRoom.res_id) ? 'selected' : ''%>>
+                                <% } %>
+                                <% if (formMode == 'showEdit') { %>
+                                <%= (reservedRoom._id && res._id.toString() == reservedRoom.resident._id.toString()) ? 'selected' : ''%>>
+                                <% } %>
+                                <% if (formMode == 'edit') { %>
+                                <%= (res._id.toString() == reservedRoom.res_id) ? 'selected' : ''%>>
+                                <% } %>
+                                <% if (formMode == 'showDetails') { %>
+                                <%= (reservedRoom._id && res._id.toString() == reservedRoom.resident._id.toString()) ? 'selected' : ''%>>
+                                <% } %>
+                            </option>
+                        <% } %>
+                    <% }else if(res.phone_number == loggedUser.phone_number && res.last_name == loggedUser.last_name && res.first_name == loggedUser.first_name) { %>
+                        <option value = "<%= res._id %>" label="<%= res.first_name + ' ' + res.last_name %>"
+                            <% if (formMode == 'createNew') { %>
+                            <%= (res._id.toString() == reservedRoom.res_id) ? 'selected' : ''%>>
+                            <% } %>
+                            <% if (formMode == 'showEdit') { %>
+                            <%= (reservedRoom._id && res._id.toString() == reservedRoom.resident._id.toString()) ? 'selected' : ''%>>
+                            <% } %>
+                            <% if (formMode == 'edit') { %>
+                            <%= (res._id.toString() == reservedRoom.res_id) ? 'selected' : ''%>>
+                            <% } %>
+                            <% if (formMode == 'showDetails') { %>
+                            <%= (reservedRoom._id && res._id.toString() == reservedRoom.resident._id.toString()) ? 'selected' : ''%>>
+                            <% } %>
+                        </option>
+                    <% } %>
+                <% } %>
+            </select>
+            <span id="errorResident" class="errors-text">
+                <% if (validationErrors.find(e => e.path.includes('res_id'))) { %>
+                    <%= __(validationErrors.find(e => e.path.includes('res_id')).message) %>
+                <%}%>
+            </span>
+            <label for="startDate"><%= __('resRoom.form.details.startDate') %> <span class="symbol-required">*</span></label>
+            <input type="date" name="start_date" id="start_date" class="<%= validationErrors.find(e => e.path.includes('start_date')) ? 'error-input' : ''%>" value="<%= fmt.formatDate(reservedRoom.start_date) %>" <%=( formMode=='showDetails' ) ? 'disabled' : '' %>>
+            <span id="errorStartDate" class="errors-text">
+                <% if (validationErrors.find(e => e.path.includes('start_date'))) { %>
+                    <%= __(validationErrors.find(e => e.path.includes('start_date')).message) %>
+                <%}%>
+            </span>
+            <label for="endDate"><%= __('resRoom.form.details.endDate') %> <span class="symbol-required">*</span></label>
+            <input type="date" name="end_date" id="end_date" class="<%= validationErrors.find(e => e.path.includes('end_date')) ? 'error-input' : ''%>" value="<%= fmt.formatDate(reservedRoom.end_date) %>" <%=( formMode=='showDetails' ) ? 'disabled' : '' %>>
+            <span id="errorEndDate" class="errors-text">
+                <% if (validationErrors.find(e => e.path.includes('end_date'))) { %>
+                    <%= __(validationErrors.find(e => e.path.includes('end_date')).message) %>
+                <%}%>
+            </span>
+            <% if(formMode == 'showDetails') { %>
+                <% if(admin) { %>
+                    <div class="form-buttons">
+                        <a href="/reservedRooms/edit/<%= reservedRoom._id %>" class="list-actions-button-edit">
+                            <%= __('list.actions.edit') %>
+                        </a>
+                    </div>
+                <% } %>
+            <% } %>
+                            <p id="errorsSummary" class="form-sum-errors">
+                                <%if (validationErrors.length > 0) { %>
+                                    <%= __('resRoom.form.error.formError') %>
+                                <% } %>
+                            </p>
+                            <div class="form-buttons">
+                                <span id="errorsSummary" class="errors-text" class="<%= validationErrors.find(e => e.path.includes('form')) ? 'error-input' : ''%>">
+                            <% if (validationErrors.find(e => e.path.includes('form'))) { %>
+                                <%= __(validationErrors.find(e => e.path.includes('form')).message) %>
+                            <%}%>
+                        </span>
+                                <% if (formMode != 'showDetails') { %>
+                                    <input class="form-button-submit" type="submit" value="<%=btnLabel%>">
+                                    <a class="form-button-cancel" href="/reservedRooms">
+                                        <%= __('form.actions.cancel') %>
+                                    </a>
+                                    <% } else { %>
+                                        <a class="form-button-cancel" href="/reservedRooms">
+                                            <%= __('form.actions.return') %>
+                                        </a>
+                                    <% } %>
+                            </div>
+        </form>
+    </main>
+    <%- include('../../fragments/footer.ejs') %>

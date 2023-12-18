@@ -1,0 +1,194 @@
+{
+	"main-page": {
+		"content": "Main Page",
+		"content2": "Some random text bla-bla-bla...",
+		"title": "Alex Podolich Akademik DEMO"
+	},
+	"log-in": {
+		"text": "Log in",
+		"phone": "Phone number:",
+		"password": "Password:",
+		"log-in-text": "You are logged in as: ",
+		"sign-in": "Sign in",
+		"sign-out": "Sign out"
+	},
+	"nav": {
+		"main-page": "Main page",
+		"residents": "Residents",
+		"rooms": "Rooms",
+		"res-rooms": "Reserved rooms"
+	},
+	"list": {
+		"actions": {
+			"title": "Actions",
+			"details": "Details",
+			"edit": "Edit",
+			"delete": "Delete"
+		}
+	},
+	"form": {
+		"actions": {
+			"return": "Return",
+			"edit": "Edit",
+			"cancel": "Cancel"
+		}
+	},
+	"res": {
+		"fields": {
+			"firstName": "First name",
+			"lastName": "Surname",
+			"phone": "Phone number"
+		},
+		"list": {
+			"title": "Residents",
+			"addNew": "Add a new resident",
+			"noData": "No residents found in database",
+			"pageTitle": "List of residents"
+		},
+		"form": {
+			"res-rooms": "Reservation Details",
+			"add": {
+				"pageTitle": "Adding a new resident",
+				"btnLabel": "Add the resident",
+				"confirm": {
+					"header": "Confirmation",
+					"text": "The new resident has been successfully created"
+				}
+			},
+			"details": {
+				"name": "Name:",
+				"surname": "Surname:",
+				"phone": "Phone number:",
+				"password": "Password:",
+				"pageTitle": "Resident details"
+			},
+			"edit": {
+				"pageTitle": "Editing a resident",
+				"btnLabel": "Save changes",
+				"confirm": {
+					"header": "Confirmation",
+					"text": "The resident has been successfully updated"
+				}
+			},
+			"error": {
+				"formError": "Form contains errors"
+			}
+		}
+	},
+	"room": {
+		"fields": {
+			"roomNum": "Room number",
+			"price": "Price"
+		},
+		"list": {
+			"title": "Rooms",
+			"addNew": "Add a new room",
+			"noData": "No rooms found in database",
+			"pageTitle": "List of rooms"
+		},
+		"form": {
+			"res-rooms": "Reservation Details",
+			"add": {
+				"pageTitle": "Adding a new room",
+				"btnLabel": "Add the room",
+				"confirm": {
+					"header": "Confirmation",
+					"text": "The new room has been successfully created"
+				}
+			},
+			"details": {
+				"roomNum": "Room number:",
+				"price": "Price:",
+				"pageTitle": "Room details"
+			},
+			"edit": {
+				"pageTitle": "Editing a room",
+				"btnLabel": "Save changes",
+				"confirm": {
+					"header": "Confirmation",
+					"text": "The room has been successfully updated"
+				}
+			},
+			"error": {
+				"formError": "Form contains errors"
+			}
+		}
+	},
+	"resRoom": {
+		"fields": {
+			"roomNum": "Room number",
+			"name": "First name",
+			"surname": "Surname",
+			"price": "Price",
+			"phone": "Phone number",
+			"startDate": "Start Date",
+			"endDate": "End Date"
+		},
+		"list": {
+			"title": "Reserved rooms",
+			"addNew": "Add a new reserverd room",
+			"noData": "No reserved rooms found in database",
+			"pageTitle": "List of reserved rooms"
+		},
+		"form": {
+			"res-rooms": "Reservation Details",
+			"add": {
+				"pageTitle": "Adding a new reserved room",
+				"btnLabel": "Add the reserved room",
+				"confirm": {
+					"header": "Confirmation",
+					"text": "The new reserved room has been successfully created"
+				}
+			},
+			"details": {
+				"room": "Room:",
+				"resident": "Resident:",
+				"startDate": "Start date:",
+				"endDate": "End date:",
+				"selectRoom": "--Please select a room--",
+				"selectResident": "--Please select a resident--",
+				"pageTitle": "Reserved room details"
+			},
+			"edit": {
+				"pageTitle": "Editing a reserved room",
+				"btnLabel": "Save changes",
+				"confirm": {
+					"header": "Confirmation",
+					"text": "The reserved room has been successfully updated"
+				}
+			},
+			"error": {
+				"formError": "Form contains errors"
+			}
+		}
+	},
+	"validationMessage": {
+		"fieldRequired": "This field is required",
+		"loginError": "Invalid phone number or password!",
+		"3-20charError": "The field should contain 3 to 20 characters",
+		"9-13charError": "The field should contain 9 to 13 characters",
+		"4-16charError": "The field should contain 4 to 16 characters",
+		"1-6charError": "The field should contain 1 to 6 characters",
+		"validPhone": "This field should contain a valid phone number",
+		"validPass": "The field should contain a lowercase and uppercase letter, digit and special character",
+		"formErrors": "Form contains errors",
+		"validDate": "The field shold contain the date in the yyyy-MM-dd format (e.g. 2000-01-01)",
+		"pastDate": "The date cannot be from the past",
+		"endStartDateError": "The \"End date\" should be later than the \"Start date\"",
+		"numberRequired": "This field should be a number",
+		"validNumber": "This field should be a number from 1000 to 100000"
+	},
+	"placeholder": {
+		"resident": {
+			"firstNamePlaceholder": "3-20 characters",
+			"lastNamePlaceholder": "3-20 characters",
+			"phonePlaceholder": "e.g. 0671234567",
+			"passPlaceholder": "e.g. zxcQWE123!"
+		},
+		"room": {
+			"numberPlaceholder": "1-6 characters",
+			"pricePlaceholder": "number between 1000 and 100000"
+		}
+	},
+	"The entered phone number is already in use": "The entered phone number is already in use"
+}

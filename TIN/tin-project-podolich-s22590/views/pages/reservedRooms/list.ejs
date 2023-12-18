@@ -1,0 +1,108 @@
+<%- include('../../fragments/header.ejs') %>
+    <main>
+        <h2>
+            <%= __('resRoom.list.title') %>
+        </h2>
+        <table class="table-list table-resRooms">
+            <thead>
+                <tr>
+                    <th>
+                        <%= __('resRoom.fields.roomNum') %>
+                    </th>
+                    <th>
+                        <%= __('resRoom.fields.surname') %>
+                    </th>
+                    <th>
+                        <%= __('resRoom.fields.startDate') %>
+                    </th>
+                    <th>
+                        <%= __('resRoom.fields.endDate') %>
+                    </th>
+                    <th>
+                        <%= __('list.actions.title') %>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for (let reservedRoom of reservedRooms){ %>
+                    <% if(admin) {%>
+                        <tr>
+                            <td>
+                                <%= reservedRoom.room.number%>
+                            </td>
+                            <td>
+                                <%= reservedRoom.resident.last_name%>
+                            </td>
+                            <td>
+                                <%= reservedRoom.start_date.toISOString().split('T')[0]%>
+                            </td>
+                            <td>
+                                <%= reservedRoom.end_date ? reservedRoom.end_date.toISOString().split('T')[0] : '' %>
+                            </td>
+                            <td>
+                                <ul class="list-actions">
+                                    <li>
+                                        <a href="/reservedRooms/details/<%=reservedRoom._id%>" class="list-actions-button-details-img"><img alt="Details" src="../../images/details.png" width="24" height="24"></a>
+                                        <a href="/reservedRooms/details/<%=reservedRoom._id%>" class="list-actions-button-details">
+                                            <%= __('list.actions.details') %>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/reservedRooms/edit/<%=reservedRoom._id%>" class="list-actions-button-edit-img"><img alt="Edit" src="../../images/edit.png" width="24" height="24"></a>
+                                        <a href="/reservedRooms/edit/<%=reservedRoom._id%>" class="list-actions-button-edit">
+                                            <%= __('list.actions.edit') %>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/reservedRooms/delete/<%=reservedRoom._id%>" class="list-actions-button-delete-img"><img alt="Delete" src="../../images/delete.png" width="24" height="24"></a>
+                                        <a href="/reservedRooms/delete/<%=reservedRoom._id%>" class="list-actions-button-delete">
+                                            <%= __('list.actions.delete') %>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>    
+                    <% }else if(reservedRoom.resident.phone_number == loggedUser.phone_number && reservedRoom.resident.last_name == loggedUser.last_name && reservedRoom.resident.first_name == loggedUser.first_name ) { %>
+                        <tr>
+                            <td>
+                                <%= reservedRoom.room.number%>
+                            </td>
+                            <td>
+                                <%= reservedRoom.resident.last_name%>
+                            </td>
+                            <td>
+                                <%= reservedRoom.start_date.toISOString().split('T')[0]%>
+                            </td>
+                            <td>
+                                <%= reservedRoom.end_date ? reservedRoom.end_date.toISOString().split('T')[0] : '' %>
+                            </td>
+                            <td>
+                                <ul class="list-actions">
+                                    <li>
+                                        <a href="/reservedRooms/details/<%=reservedRoom._id%>" class="list-actions-button-details-img"><img alt="Details" src="../../images/details.png" width="24" height="24"></a>
+                                        <a href="/reservedRooms/details/<%=reservedRoom._id%>" class="list-actions-button-details">
+                                            <%= __('list.actions.details') %>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/reservedRooms/delete/<%=reservedRoom._id%>" class="list-actions-button-delete-img"><img alt="Delete" src="../../images/delete.png" width="24" height="24"></a>
+                                        <a href="/reservedRooms/delete/<%=reservedRoom._id%>" class="list-actions-button-delete">
+                                            <%= __('list.actions.delete') %>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    <% } %>
+                <% } %>
+            </tbody>
+        </table>
+        <% if(loggedUser) { %>
+            <p>
+                <a href="reservedRooms/add" class="button-add">
+                    <%= __('resRoom.list.addNew') %>
+                </a>
+            </p>
+            <% } %>
+    </main>
+    <%- include('../../fragments/footer.ejs') %>

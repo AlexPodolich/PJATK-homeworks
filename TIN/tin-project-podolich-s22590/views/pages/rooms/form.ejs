@@ -1,0 +1,107 @@
+<%- include('../../fragments/header.ejs') %>
+    <main>
+        <script type="application/javascript" src="/js/validationRoomForm.js"></script>
+        <h2>
+            <%= pageTitle%>
+        </h2>
+        <div style="display: none">
+            <span id="errorMessage-required"><%= __('validationMessage.fieldRequired') %></span>
+            <span id="errorMessage-1-6charError"><%= __('validationMessage.1-6charError') %></span>
+            <span id="errorMessage-numberRequired"><%= __('validationMessage.numberRequired') %></span>
+            <span id="errorMessage-validNumber"><%= __('validationMessage.validNumber') %></span>
+            <span id="errorMessage-formErrors"><%= __('validationMessage.formErrors') %></span>
+        </div>
+        <!-- onsubmit="return validateForm();" -->
+        <form class="form" method="post" action="<%=formAction%>" novalidate onsubmit="return validateForm();">
+            <input type="hidden" name="_id" value="<%= room._id%>">
+            <label for="number"><%= __('room.form.details.roomNum') %> <span class="symbol-required">*</span></label>
+            <input type="text" name="number" id="number" placeholder="<%= __('placeholder.room.numberPlaceholder') %>" class="<%= validationErrors.find(e => e.path.includes('number')) ? 'error-input' : ''%>" value="<%= room.number %>" <%=( formMode=='showDetails' ) ? 'disabled' : '' %>>
+            <span id="errorRoomNum" class="errors-text">
+                <% if (validationErrors.find(e => e.path.includes('number'))) { %>
+                    <%= __(validationErrors.find(e => e.path.includes('number')).message) %>
+                <%}%>
+            </span>
+            <label for="price"><%= __('room.form.details.price') %> <span class="symbol-required">*</span></label>
+            <input type="number" name="price" id="price" placeholder="<%= __('placeholder.room.pricePlaceholder') %>" class="<%= validationErrors.find(e => e.path.includes('price')) ? 'error-input' : ''%>" value="<%= room.price %>" <%=( formMode=='showDetails' ) ? 'disabled' :
+                '' %>>
+            <span id="errorPrice" class="errors-text">
+                <% if (validationErrors.find(e => e.path.includes('price'))) { %>
+                    <%= __(validationErrors.find(e => e.path.includes('price')).message) %>
+                <%}%>
+            </span>
+            <!-- <label for="description">Description: <span class="symbol-required">*</span></label>
+            <textarea name="description" id="description" rows="4" cols="50" placeholder="1-60 characters" required></textarea>
+            <span id="errorDescription" class="errors-text"></span> -->
+            <% if(formMode == 'showDetails') { %>
+                <% if(loggedUser) { %>
+                    <div class="form-buttons">
+                        <a href="/rooms/edit/<%= room._id %>" class="list-actions-button-edit">Edit</a>
+                    </div>
+                    <% } %>
+                        <% } %>
+                            <p id="errorsSummary" class="form-sum-errors">
+                                <%if (validationErrors.length > 0) { %>
+                                    <%= __('room.form.error.formError') %>
+                                        <% } %>
+                            </p>
+                            <% if (formMode == 'showDetails') { %>
+                                <div class="form-wrapper">
+                                    <h2>
+                                        <%= __('room.form.res-rooms') %>
+                                    </h2>
+                                    <% if (room.reservedRooms.length > 0) { %>
+
+                                        <table class="table-list">
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        <%= __('resRoom.fields.name') %>
+                                                    </th>
+                                                    <th>
+                                                        <%= __('resRoom.fields.surname') %>
+                                                    </th>
+                                                    <th>
+                                                        <%= __('resRoom.fields.phone') %>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <% for (let rr of room.reservedRooms) { %>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="/residents/details/<%=rr.resident._id %>">
+                                                                <%= rr.resident.first_name %>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <%= rr.resident.last_name %>
+                                                        </td>
+                                                        <td>
+                                                            <%= rr.resident.phone_number %>
+                                                        </td>
+                                                    </tr>
+                                                    <% } %>
+                                            </tbody>
+                                        </table>
+                                        <% }else{ %>
+                                            <div>
+                                                <%= __('res.list.noData') %>
+                                            </div>
+                                            <% } %>
+                                                <% } %>
+                                                    <div class="form-buttons">
+                                                        <% if (formMode != 'showDetails') { %>
+                                                            <input class="form-button-submit" type="submit" value="<%=btnLabel%>">
+                                                            <a class="form-button-cancel" href="/rooms">
+                                                                <%= __('form.actions.cancel') %>
+                                                            </a>
+                                                            <% } else { %>
+                                                                <a class="form-button-cancel" href="/rooms">
+                                                                    <%= __('form.actions.return') %>
+                                                                </a>
+                                                                <% } %>
+                                                    </div>
+                                </div>
+        </form>
+    </main>
+    <%- include('../../fragments/footer.ejs') %>

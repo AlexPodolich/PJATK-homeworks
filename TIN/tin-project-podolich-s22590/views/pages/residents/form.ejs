@@ -1,0 +1,135 @@
+<%- include('../../fragments/header.ejs') %>
+    <main>
+        <script type="application/javascript" src="/js/validationResidentForm.js"></script>
+        <h2>
+            <%= pageTitle%>
+        </h2>
+        <div style="display: none">
+            <span id="errorMessage-required"><%= __('validationMessage.fieldRequired') %></span>
+            <span id="errorMessage-char3-20"><%= __('validationMessage.3-20charError') %></span>
+            <span id="errorMessage-char9-13"><%= __('validationMessage.9-13charError') %></span>
+            <span id="errorMessage-validPhone"><%= __('validationMessage.validPhone') %></span>
+            <span id="errorMessage-char4-16"><%= __('validationMessage.4-16charError') %></span>
+            <span id="errorMessage-validPass"><%= __('validationMessage.validPass') %></span>
+            <span id="errorMessage-formErrors"><%= __('validationMessage.formErrors') %></span>
+            <span id="formType"><%= formMode %></span>
+        </div>
+        <form class="form" method="post" action="<%=formAction%>" novalidate onsubmit="return validateForm();">
+            <input type="hidden" name="_id" value="<%= resident._id%>">
+            <label for="first_name"><%= __('res.form.details.name') %> <span class="symbol-required">*</span></label>
+            
+            <input type="text" name="first_name" id="first_name" placeholder="<%= __('placeholder.resident.firstNamePlaceholder') %>" class="<%= validationErrors.find(e => e.path.includes('first_name')) ? 'error-input' : ''%>" value="<%= resident.first_name %>" <%=( formMode=='showDetails' ) ?
+                'disabled' : '' %>>
+            <span id="errorFirstName" class="errors-text">
+                <% console.log(validationErrors)%>
+                <% if (validationErrors.find(e => e.path.includes('first_name'))) { %>
+                    <%= __(validationErrors.find(e => e.path.includes('first_name')).message) %>
+
+                <%}%>
+            </span>
+            <label for="last_name"><%= __('res.form.details.surname') %> <span class="symbol-required">*</span></label>
+            <input type="text" name="last_name" id="last_name" placeholder="<%= __('placeholder.resident.lastNamePlaceholder') %>" class="<%= validationErrors.find(e => e.path.includes('last_name')) ? 'error-input' : ''%>" value="<%= resident.last_name %>" <%=( formMode=='showDetails' ) ? 'disabled'
+                : '' %>>
+            <span id="errorSurname" class="errors-text">
+                <% if (validationErrors.find(e => e.path.includes('last_name'))) { %>
+                    <%= __(validationErrors.find(e => e.path.includes('last_name')).message) %>
+                <%}%>
+            </span>
+            <label for="phone_number"><%= __('res.form.details.phone') %> <span class="symbol-required">*</span></label>
+            <input type="text" name="phone_number" id="phone_number" placeholder="<%= __('placeholder.resident.phonePlaceholder') %>" class="<%= validationErrors.find(e => e.path.includes('phone_number')) ? 'error-input' : ''%>" value="<%= resident.phone_number %>" <%=( formMode=='showDetails' ) ?
+                'disabled' : '' %>>
+            <span id="errorPhoneNum" class="errors-text">
+                <% if (validationErrors.find(e => e.path.includes('phone_number'))) { %>
+                    <%= __(validationErrors.find(e => e.path.includes('phone_number')).message) %>
+                <%}%>
+            </span>
+            <% if(formMode != 'showDetails') { %>
+                <label for="password"><%= __('res.form.details.password') %> <span class="symbol-required"><%=formMode == 'createNew' ? '*' : ''%></span></label>
+                <input type="text" name="password" id="password" placeholder="<%= __('placeholder.resident.passPlaceholder') %>" class="<%= validationErrors.find(e => e.path.includes('password')) ? 'error-input' : ''%>" value="" <%=( formMode=='showDetails' ) ? 'disabled' : '' %>>
+                <span id="errorPassword" class="errors-text">
+                    <% if (validationErrors.find(e => e.path.includes('password'))) { %>
+                        <%= __(validationErrors.find(e => e.path.includes('password')).message) %>
+                    <%}%>
+                </span>
+           <%}%>
+            <% if(formMode == 'showDetails') { %>
+                <% if(loggedUser) { %>
+                    <div class="form-buttons">
+                        <a href="/residents/edit/<%= resident._id %>" class="list-actions-button-edit">
+                            <%= __('list.actions.edit') %>
+                        </a>
+                    </div>
+                    <% } %>
+                        <% } %>
+                            <p id="errorsSummary" class="form-sum-errors">
+                                <%if (validationErrors.length > 0) { %>
+                                    <%= __('res.form.error.formError') %>
+                                        <% } %>
+                            </p>
+                            <% if (formMode == 'showDetails') { %>
+                                <div class="form-wrapper">
+                                    <h2>
+                                        <%= __('res.form.res-rooms') %>
+                                    </h2>
+                                    <% if (resident.reservedRooms.length > 0) { %>
+                                        <table class="table-list">
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        <%= __('resRoom.fields.roomNum') %>
+                                                    </th>
+                                                    <th>
+                                                        <%= __('resRoom.fields.price') %>
+                                                    </th>
+                                                    <th>
+                                                        <%= __('resRoom.fields.startDate') %>
+                                                    </th>
+                                                    <th>
+                                                        <%= __('resRoom.fields.endDate') %>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <% for (let rr of resident.reservedRooms) { %>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="/rooms/details/<%=rr.room._id %>">
+                                                                <%= rr.room.number %>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <%= rr.room.price %>
+                                                        </td>
+                                                        <td>
+                                                            <%= rr.start_date.toISOString().split('T')[0]%>
+                                                        </td>
+                                                        <td>
+                                                            <%= rr.end_date ? rr.end_date.toISOString().split('T')[0] : '' %>
+                                                        </td>
+                                                    </tr>
+                                                    <% } %>
+                                            </tbody>
+                                        </table>
+                                        <% }else{ %>
+                                            <div>
+                                                <%= __('room.list.noData') %>
+                                            </div>
+                                            <% } %>
+                                                <% } %>
+                                                    <div class="form-buttons">
+                                                        <p id="errorsSummary" class="errors-text"></p>
+                                                        <% if (formMode != 'showDetails') { %>
+                                                            <input class="form-button-submit" type="submit" value="<%=btnLabel%>">
+                                                            <a class="form-button-cancel" href="/residents">
+                                                                <%= __('form.actions.cancel') %>
+                                                            </a>
+                                                            <% } else { %>
+                                                                <a class="form-button-cancel" href="/residents">
+                                                                    <%= __('form.actions.return') %>
+                                                                </a>
+                                                                <% } %>
+                                                    </div>
+                                </div>
+        </form>
+    </main>
+    <%- include('../../fragments/footer.ejs') %>

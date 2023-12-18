@@ -1,0 +1,193 @@
+{
+	"main-page": {
+		"content": "Strona główna",
+		"content2": "Jakiś przypadkowy tekst bla-bla-bla...",
+		"title": "Alex Podolich Akademik DEMO"
+	},
+	"log-in": {
+		"text": "Zaloguj sie",
+		"phone": "Numer telefonu:",
+		"password": "Hasło:",
+		"log-in-text": "Jesteś zalogowany jako: ",
+		"sign-in": "Zaloguj się",
+		"sign-out": "Wyloguj się"
+	},
+	"nav": {
+		"main-page": "Strona główna",
+		"residents": "Mieszkańcy",
+		"rooms": "Pokoje",
+		"res-rooms": "Zarezerwowane pokoje"
+	},
+	"list": {
+		"actions": {
+			"title": "Akcje",
+			"details": "Szczegóły",
+			"edit": "Edytuj",
+			"delete": "Usuń"
+		}
+	},
+	"form": {
+		"actions": {
+			"return": "Powrót",
+			"edit": "Edytuj",
+			"cancel": "Anuluj"
+		}
+	},
+	"res": {
+		"fields": {
+			"firstName": "Imię",
+			"lastName": "Nazwisko",
+			"phone": "Telefon"
+		},
+		"list": {
+			"title": "Mieszkańcy",
+			"addNew": "Dodaj nowego mieszkańca",
+			"noData": "Brak mieszkańców w bazie danych",
+			"pageTitle": "Lista mieszkańców"
+		},
+		"form": {
+			"res-rooms": "Szczegóły rezerwacji",
+			"add": {
+				"pageTitle": "Dodawanie mieszkańca",
+				"btnLabel": "Dodaj mieszkańca",
+				"confirm": {
+					"header": "Potwierdzenie operacji",
+					"text": "Pomyślnie utworzono nowego mieszkańca"
+				}
+			},
+			"details": {
+				"name": "Imię:",
+				"surname": "Nazwisko:",
+				"phone": "Numer telefonu:",
+				"password": "Hasło:",
+				"pageTitle": "Dane mieszkańca"
+			},
+			"edit": {
+				"pageTitle": "Edycja mieszkańca                ",
+				"btnLabel": "Zapisz zmiany",
+				"confirm": {
+					"header": "Potwierdzenie operacji",
+					"text": "Rezydent został pomyślnie zaktualizowany"
+				}
+			},
+			"error": {
+				"formError": "Formularz zawiera błędy"
+			}
+		}
+	},
+	"room": {
+		"fields": {
+			"roomNum": "Numer pokoju",
+			"price": "Cena"
+		},
+		"list": {
+			"title": "Pokoje",
+			"addNew": "Dodaj nowy pokój",
+			"noData": "Brak pokoi w bazie danych",
+			"pageTitle": "Lista pokoi"
+		},
+		"form": {
+			"res-rooms": "Szczegóły rezerwacji",
+			"add": {
+				"pageTitle": "Dodawanie nowego pokoju",
+				"btnLabel": "Dodaj pokój",
+				"confirm": {
+					"header": "Potwierdzenie",
+					"text": "Nowy pokój został pomyślnie utworzony"
+				}
+			},
+			"details": {
+				"roomNum": "Numer pokoju:",
+				"price": "Cena:",
+				"pageTitle": "Szczegóły pokoju"
+			},
+			"edit": {
+				"pageTitle": "Edycja pokoju",
+				"btnLabel": "Zapisz zmiany",
+				"confirm": {
+					"header": "Potwierdzenie",
+					"text": "Pokój został pomyślnie zaktualizowany"
+				}
+			},
+			"error": {
+				"formError": "Formularz zawiera błędy"
+			}
+		}
+	},
+	"resRoom": {
+		"fields": {
+			"roomNum": "Numer pokoju",
+			"name": "Imię",
+			"surname": "Nazwisko",
+			"price": "Cena",
+			"phone": "Numer telefonu",
+			"startDate": "Data rozpoczęcia",
+			"endDate": "Data końcowa"
+		},
+		"list": {
+			"title": "Zarezerwowane pokoje",
+			"addNew": "Dodaj nowy zarezerwowany pokój",
+			"noData": "Brak zarezerwowanych pokoi w bazie danych",
+			"pageTitle": "Lista zarezerwowanych pokoi"
+		},
+		"form": {
+			"res-rooms": "Szczegóły rezerwacji",
+			"add": {
+				"pageTitle": "Dodanie nowego zarezerwowanego pokoju",
+				"btnLabel": "Dodaj zarezerwowany pokój",
+				"confirm": {
+					"header": "Potwierdzenie",
+					"text": "Nowy zarezerwowany pokój został pomyślnie utworzony"
+				}
+			},
+			"details": {
+				"room": "Pokój:",
+				"resident": "Rezydent:",
+				"startDate": "Data rozpoczęcia:",
+				"endDate": "Data końcowa:",
+				"selectRoom": "--Proszę wybrać pokój--",
+				"selectResident": "--Proszę wybrać mieszkańca--",
+				"pageTitle": "Zarezerwowane szczegóły pokoju"
+			},
+			"edit": {
+				"pageTitle": "Edycja zarezerwowanego pokoju",
+				"btnLabel": "Zapisz zmiany",
+				"confirm": {
+					"header": "Potwierdzenie",
+					"text": "Zarezerwowany pokój został pomyślnie zaktualizowany"
+				}
+			},
+			"error": {
+				"formError": "Formularz zawiera błędy"
+			}
+		}
+	},
+	"validationMessage": {
+		"fieldRequired": "To pole jest wymagane",
+		"loginError": "Nieprawidłowy numer telefonu lub hasło!",
+		"3-20charError": "Pole powinno zawierać od 3 do 20 znaków",
+		"9-13charError": "Pole powinno zawierać od 9 do 13 znaków",
+		"4-16charError": "Pole powinno zawierać od 4 do 16 znaków",
+		"1-6charError": "Pole powinno zawierać od 1 do 6 znaków",
+		"validPhone": "To pole powinno zawierać prawidłowy numer telefonu",
+		"validPass": "Pole powinno zawierać małą i wielką literę, cyfrę oraz znak specjalny",
+		"formErrors": "Formularz zawiera błędy",
+		"validDate": "Pole powinno zawierać datę w formacie rrrr-MM-dd (np. 2000-01-01)",
+		"pastDate": "Data nie może pochodzić z przeszłości",
+		"endStartDateError": "\"Data końcowa\" powinna być późniejsza niż \"Data rozpoczęcia\"",
+		"numberRequired": "To pole powinno zawierać liczbę",
+		"validNumber": "To pole powinno zawierać liczbę od 1000 do 100000"
+	},
+	"placeholder": {
+		"resident": {
+			"firstNamePlaceholder": "3-20 znaków",
+			"lastNamePlaceholder": "3-20 znaków",
+			"phonePlaceholder": "np. 0671234567",
+			"passPlaceholder": "np. zxcQWE123!"
+		},
+		"room": {
+			"numberPlaceholder": "1-6 znaków",
+			"pricePlaceholder": "liczba od 1000 do 100000"
+		}
+	}
+}

@@ -1,0 +1,101 @@
+<%- include('../../fragments/header.ejs') %>
+    <main>
+        <h2>
+            <%= __('res.list.title') %>
+        </h2>
+        <table class="table-list table-residents">
+            <thead>
+                <tr>
+                    <th>
+                        <%= __('res.fields.firstName') %>
+                    </th>
+                    <th>
+                        <%= __('res.fields.lastName') %>
+                    </th>
+                    <th>
+                        <%= __('res.fields.phone') %>
+                    </th>
+                    <th>
+                        <%= __('list.actions.title') %>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for (let resident of residents){ %>
+                    <% if(admin) {%>
+                        <% if(resident.phone_number != loggedUser.phone_number && resident.last_name != loggedUser.last_name && resident.first_name != loggedUser.first_name){%>
+                        <tr>
+                            <td>
+                                <%= resident.first_name%>
+                            </td>
+                            <td>
+                                <%= resident.last_name%>
+                            </td>
+                            <td>
+                                <%= resident.phone_number%>
+                            </td>
+                            <td>
+                                <ul class="list-actions">
+                                    <li>
+                                        <a href="/residents/details/<%=residents._id%>" class="list-actions-button-details-img"><img alt="Details" src="../../images/details.png" width="24" height="24"></a>
+                                        <a href="/residents/details/<%=resident._id%>" class="list-actions-button-details">
+                                            <%= __('list.actions.details') %>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/residents/edit/<%=residents._id%>" class="list-actions-button-edit-img"><img alt="Edit" src="../../images/edit.png" width="24" height="24"></a>
+                                        <a href="/residents/edit/<%=resident._id%>" class="list-actions-button-edit">
+                                              <%= __('list.actions.edit') %>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/residents/delete/<%=residents._id%>" class="list-actions-button-delete-img"><img alt="Delete" src="../../images/delete.png" width="24" height="24"></a>
+                                        <a href="/residents/delete/<%=resident._id%>" class="list-actions-button-delete">
+                                             <%= __('list.actions.delete') %>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <% } %>
+                    <% }else if(resident.phone_number == loggedUser.phone_number && resident.last_name == loggedUser.last_name && resident.first_name == loggedUser.first_name ) { %>
+                        <tr>
+                            <td>
+                                <%= resident.first_name%>
+                            </td>
+                            <td>
+                                <%= resident.last_name%>
+                            </td>
+                            <td>
+                                <%= resident.phone_number%>
+                            </td>
+                            <td>
+                                <ul class="list-actions">
+                                    <li>
+                                        <a href="/residents/details/<%=residents._id%>" class="list-actions-button-details-img"><img alt="Details" src="../../images/details.png" width="24" height="24"></a>
+                                        <a href="/residents/details/<%=resident._id%>" class="list-actions-button-details">
+                                            <%= __('list.actions.details') %>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/residents/edit/<%=residents._id%>" class="list-actions-button-edit-img"><img alt="Edit" src="../../images/edit.png" width="24" height="24"></a>
+                                        <a href="/residents/edit/<%=resident._id%>" class="list-actions-button-edit">
+                                            <%= __('list.actions.edit') %>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    <% } %>
+                <% } %>
+            </tbody>
+        </table>
+        <% if(admin) { %>
+            <p>
+                <a href="residents/add" class="button-add">
+                    <%= __('res.list.addNew') %>
+                </a>
+            </p>
+        <% } %>
+    </main>
+    <%- include('../../fragments/footer.ejs') %>
