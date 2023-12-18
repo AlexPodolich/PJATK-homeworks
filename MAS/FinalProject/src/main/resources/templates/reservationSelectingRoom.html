@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" th:href="@{/assets/css/style.css}">
+</head>
+<body>
+<div>
+  <div class="home-container">
+    <header data-role="Header" class="home-header">
+      <div class="header-container">
+        <img alt="logo" src="https://studentdepot.pl/wp-content/themes/student/assets/img/logo-student-depot.svg" class="home-image"/>
+      </div>
+      <div class="home-nav">
+        <nav class="navigation-links-nav navigation-links-root-class-name">
+          <span class="navigation-links-text"><span>About</span></span>
+          <span class="navigation-links-text"><span>Features</span></span>
+          <span class="navigation-links-text"><span>Pricing</span></span>
+          <span class="navigation-links-text"><span>Team</span></span>
+          <span class="navigation-links-text"><span>Blog</span></span>
+        </nav>
+      </div>
+    </header>
+    <h1 class="home-text">Reservation Menu</h1>
+    <h1 class="home-text01" th:text="'Rooms available in ' + ${dorm.getName()} + ' dormitory:'"></h1>
+    <div class="home-container-reserv">
+      <div class="home-container03">
+        <table class="table">
+          <thead>
+          <tr>
+            <th> Room Number</th>
+            <th> Room Price </th>
+            <th style="width: 25%;"> Room Description </th>
+            <th> Room Size </th>
+            <th> Action </th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr th:each = "rooms: ${rooms}">
+            <td th:text = "${rooms.roomNumber}"></td>
+            <td th:text = "${rooms.roomPrice}"></td>
+            <td th:text = "${rooms.roomDescription}"></td>
+            <td th:text = "${rooms.roomSize}"></td>
+            <td> <button type="button" class="table-btn button" th:onclick="|location.href='/reservation/process/${rooms.id}'|">Reserve</button></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="home-make-reserv">
+        <button type="button" class="button-cancel" th:onclick="|location.href='/reservation/selectDorm'|">Cancel</button>
+      </div>
+    </div>
+    <footer class="home-footer2">
+      <div class="header-container">
+        <img alt="logo" src="https://studentdepot.pl/wp-content/themes/student/assets/img/logo-student-depot.svg" class="home-image2"/>
+      </div>
+      <div class="home-links-container">
+        <div class="home-container04">
+          <div class="home-container05">
+            <span class="home-text11">Product</span>
+            <span class="home-text12">Features</span>
+            <span class="home-text12">Pricing</span>
+            <span class="home-text12">Tutorials</span>
+            <span>Releases</span>
+          </div>
+          <div class="home-container06">
+            <span class="home-text16">Company</span>
+            <span class="home-text12">About</span>
+            <span class="home-text12">Careers</span>
+            <span class="home-text12">Contact</span>
+            <span>Blog</span>
+          </div>
+        </div>
+        <div class="home-container07">
+          <div class="home-container08">
+            <span class="home-text21">Support</span>
+            <span class="home-text12">Terms of service</span>
+            <span class="home-text12">Privacy Policy</span>
+            <span class="home-text12">Legal</span>
+            <span>Help center</span>
+          </div>
+          <div class="home-container09">
+            <span class="home-text26">Resources</span>
+            <span class="home-text12">Blog</span>
+            <span class="home-text12">Pricing</span>
+            <span class="home-text12">Service</span>
+            <span>Product</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+
+</body>
+</html>

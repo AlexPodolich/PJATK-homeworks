@@ -1,0 +1,22 @@
+MP01
+complex attribute - class Dormitory(Address)
+optional attribute - class Resident(residentEmail)
+multi-value attribute - class Employee(workingPhoneNumber)
+class attribute - class Room(minRoomSize)
+derived attribute - class Employment(actualSalary)
+MP02
+Basic association - between classes Resident and Report
+With an attribute - between classes Room and Resident(ReservedRoom)
+Composition - between classes Dormitory and Room
+MP03
+Overlapping inheritance - class Employee
+Multi-inheritance - class WorkingResident
+Multi-aspect inheritance - class Person
+Dynamic inheritance - class Employee
+MP04
+For an attribute(static) - class Resident(residentPhoneNumber)
+For an attribute(dynamic) - class Employment(monthlySalary)
+Unique - class Resident(residentEmail)
+Ordered - class DormitoryService(getDormsOrderedByName, getRoomsOfDormitoryById)
+Xor - class Resident
+Custom constraint - class ReservedRoom(setEndDate)
