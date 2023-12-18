@@ -1,0 +1,11 @@
+1. Class extent +
+2. Class extent persistance +
+3. Complex attribute (Address) +
+4. Optional attribute (Email) +
+5. Mandatory attrubute +
+6. Multi-value attribute(penalty) +
+7. Class attribute (roomUtilities) +
+8. Derived attribute (actualSalary) +
+9. Class method (findByName) +
+10. Method overriding +
+11. Method/constructor overloading +
