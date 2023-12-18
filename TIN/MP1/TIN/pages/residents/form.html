@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="application/javascript" src="../../js/validationCommon.js"></script>
+    <script type="application/javascript" src="../../js/validationResidentForm.js"></script>
+    <meta charset="UTF-8">
+    <title>Alex Podolich Dormitory DEMO</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Alex Podolich Dormitory DEMO</h1>
+        <img src="/TIN/images/image2.jpg" alt="Dormitory LOGO" width="250" height="150">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Main page</a></li>
+            <li><a href="../rooms/list.html">Rooms</a></li>
+            <li><a href="../reservedRooms/list.html">Reserved rooms</a></li>
+            <li><a href="./list.html" class="active">Residents</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>New employee</h2>
+        <form class="form" novalidate onsubmit="return validateForm()">
+            <label for="firstName">Name: <span class="symbol-required">*</span></label>
+            <input type="text" name="firstName" id="firstName" required>
+            <span id="errorFirstName" class="errors-text"></span>
+            <label for="surname">Surname: <span class="symbol-required">*</span></label>
+            <input type="text" name="surname" id="surname" required>
+            <span id="errorSurname" class="errors-text"></span>
+            <label for="phoneNum">Phone number: <span class="symbol-required">*</span></label>
+            <input type="text" name="phoneNum" id="phoneNum" required>
+            <span id="errorPhoneNum" class="errors-text"></span>
+            <div class="form-buttons">
+                <p id="errorsSummary" class="errors-text"></p>
+                <input type="submit" value="Add" class="form-button-submit">
+                <a href="./list.html" class="form-button-cancel">Cancel</a>
+            </div>
+        </form>
+    </main>
+    <footer>
+        Oleksandr, Podolich, s22590
+    </footer>
+</body>
+
+</html>

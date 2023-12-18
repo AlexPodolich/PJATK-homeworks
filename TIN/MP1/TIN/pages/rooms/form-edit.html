@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="application/javascript" src="../../js/validationCommon.js"></script>
+    <meta charset="UTF-8">
+    <title>Alex Podolich Dormitory DEMO</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Alex Podolich Dormitory DEMO</h1>
+        <img src="/TIN/images/image3.jpg" alt="Dormitory LOGO" width="250" height="150">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Main page</a></li>
+            <li><a href="./list.html" class="active">Rooms</a></li>
+            <li><a href="../reservedRooms/list.html">Reserved rooms</a></li>
+            <li><a href="../residents/list.html">Residents</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Edit room</h2>
+        <form class="form">
+            <label for="roomNum">Room number: <span class="symbol-required">*</span></label>
+            <input type="number" name="roomNum" id="roomNum" value="204" required>
+            <span id="errorRoomNum" class="errors-text"></span>
+            <label for="price">Price: <span class="symbol-required">*</span></label>
+            <input type="number" name="price" id="price" value="2045.0" required>
+            <span id="errorPrice" class="errors-text"></span>
+            <label for="description">Description: <span class="symbol-required">*</span></label>
+            <textarea name="description" id="description" rows="4" cols="50" required>Some description...</textarea>
+            <span id="errorDescription" class="errors-text"></span>
+            <div class="form-buttons">
+                <p id="errorsSummary" class="errors-text"></p>
+                <input type="submit" value="Add" class="form-button-submit">
+                <a href="./list.html" class="form-button-cancel">Cancel</a>
+            </div>
+        </form>
+    </main>
+    <footer>
+        Oleksandr, Podolich, s22590
+    </footer>
+</body>
+
+</html>

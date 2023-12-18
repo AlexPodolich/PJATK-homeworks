@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="application/javascript" src="../../js/validationCommon.js"></script>
+    <meta charset="UTF-8">
+    <title>Alex Podolich Dormitory DEMO</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Alex Podolich Dormitory DEMO</h1>
+        <img src="/TIN/images/image1.jpg" alt="Dormitory LOGO" width="250" height="150">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Main page</a></li>
+            <li><a href="../rooms/list.html">Rooms</a></li>
+            <li><a href="./list.html" class="active">Reserved rooms</a></li>
+            <li><a href="../residents/list.html">Residents</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Reservation details</h2>
+        <form class="form">
+            <label for="room">Room: </label>
+            <input type="number" name="room" id="room" value="208" disabled>
+            <span id="errorRoom"></span>
+            <label for="resident">Resident: </label>
+            <input type="text" name="resident" id="resident" value="Alex Podolich" disabled>
+            <span id="errorResident"></span>
+            <label for="price">Price: </label>
+            <input type="number" name="price" id="price" value="2045.0" disabled>
+            <span id="errorPrice"></span>
+            <label for="phoneNum">Resident phone number: </label>
+            <input type="text" name="phoneNum" id="phoneNum" value="0675329590" disabled>
+            <span id="errorPhoneNum"></span>
+            <label for="startDate">Start reservation date: </label>
+            <input type="date" name="startDate" id="startDate" value="2020-01-01" disabled>
+            <span id="errorStartDate"></span>
+            <label for="endDate">End reservation date: </label>
+            <input type="date" name="endDate" id="endDate" value="2022-01-01" disabled>
+            <span id="errorEndDate"></span>
+            <div class="form-buttons">
+                <a href="../reservedRooms/form-edit.html" class="list-actions-button-edit">Edit</a>
+            </div>
+        </form>
+
+        <div class="form-buttons">
+            <a href="./list.html" class="list-actions-button-details">Back</a>
+        </div>
+    </main>
+    <footer>
+        Oleksandr, Podolich, s22590
+    </footer>
+</body>
+
+</html>
